@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <form method="post" action="confirmacao.html">
+        <h1>informações pessoais</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                nome: <br>
+                <input placeholder="escreva aqui" type="text" name="name" required/>
+            </label> <br>
+            <label>
+                sobrenome: <br>
+                <input placeholder="escreva aqui" type="text" name="lastname" required>
+            </label> <br>
+            <label>
+                telefone: <br>
+                <input placeholder="digite aqui" type="number" name="phone" required >
+            </label> <br>   
+            <label>
+                idade: <br>
+                <input  type="number" name="age" min="0" max="100">
+            </label> <br>
+            <label>
+                email: <br>
+                <input type="email" name="email" placeholder=" email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            </label> <br>
+            <label>
+                senha: <br>
+                <input type="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="A senha deve conter pelo menos 8 caracteres, incluindo uma letra maiúscula, uma letra minúscula, um número e um caractere especial">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Cursos disponíveis</legend>
+                <label>
+                    html5:
+                    <input type="checkbox" name="cursos">
+                </label>
+                <label>
+                    css:
+                    <input type="checkbox" name="cursos">
+                </label>
+                <label>
+                    python:
+                    <input type="checkbox" name="cursos">
+                </label>
+                <label>
+                    SQL:
+                    <input type="checkbox" name="cursos">
+                </label>
+                <label>
+                    java:
+                    <input type="checkbox" name="cursos">
+                </label>
+        </fieldset>
+<br>
+        <label>
+            Eu li e concordo com os <a target="_blank" href="termosdeuso.html">termos de uso: </a>
+        </label>
+ 
+        <label>
+         concordo 
+            <input type="radio" name="contrato">
+        </label> 
+        <label>
+            discordo
+            <input type="radio"name="contrato">
+        </label><br> <br>
+        <label>
+            Enviar cadastro:<br>
+            <input type="submit" value="cadastro">
+        </label><br><br>
+        <label>
+            Resetar formulário:<br>
+            <input type="reset" value="Resetar">
+        </label>
+    </form>
+    
+</body>
+</html>
